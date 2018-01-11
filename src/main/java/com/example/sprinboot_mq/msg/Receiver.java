@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class Receiver{
 
     @RabbitHandler
-    public void process(String hello){
-        System.out.println("------消费者："+hello);
+    public void process(String message){
+        System.out.println("------消费者："+message);
     }
 }
