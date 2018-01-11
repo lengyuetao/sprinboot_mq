@@ -12,7 +12,8 @@ public class MsgController {
     private Sender sender;
 
     @RequestMapping(value = "/send",method = RequestMethod.GET)
-    public void send(){
+    public String send(){
         sender.send();
+        return "success";
     }
 }
