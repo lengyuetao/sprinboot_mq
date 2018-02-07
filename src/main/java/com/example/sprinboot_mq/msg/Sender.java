@@ -13,8 +13,8 @@ public class Sender {
     private AmqpTemplate template;
 
     public void send(){
-        String context="hello"+new Date();
+        String context="test"+new Date();
         System.out.println("生产者");
-        this.template.convertAndSend("hello",context);
+        this.template.convertAndSend("test",context);
     }
 }
